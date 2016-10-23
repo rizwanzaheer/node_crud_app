@@ -1,3 +1,26 @@
 body {
     font-size: 16px;
-}   
+}
+
+
+/*header*/
+
+#site-header .navbar {
+    border-radius: 0px;
+    border: none;
+    margin: 0px;
+}
+
+#site-main {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+#site-footer {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 12px;
+    background: #222;
+    color: #999;
+}
