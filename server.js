@@ -13,7 +13,6 @@ const express = require('express'),
     flash = require('connect-flash'),
     expressValidator = require('express-validator');
 
-
 // configure our application
 // set session & cookie Parser
 app.use(cookieParser());
