@@ -47,5 +47,5 @@ app.use(require('./app/routes'));
 
 // start our server
 app.listen(port, () => {
-    console.log(`App listening on http://localhost:${ port }`);
+    console.log(`App listening on http://localhost:${port}`);
 });

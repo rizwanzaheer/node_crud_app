@@ -4,7 +4,7 @@
 
 <% if(success.length > 0){ %>
 <div class="alert alert-success">
-        <%= success %>
+    <%= success %>
 </div>
 <%} %>
 
@@ -18,22 +18,26 @@
     </thead>
     <tbody>
         <% for(var event of events){ %>
-            <tr>
-                <td><%= event.name %></td>
-                <td><%= event.description %></td>
-                <td>
-                    <a href="/events/<%= event.slug %>" class="btn btn-sm btn-primary">
-                        View
-                    </a>
-                    <a href="/events/<%= event.slug %>/edit" class="btn btn-sm btn-primary">
-                        Edit
-                    </a>
-                    </a>
-                    <a href="/events/<%= event.slug %>/delete" class="btn btn-sm btn-danger">
-                        Delete
-                    </a>
-                </td>
-            </tr>
+        <tr>
+            <td>
+                <%= event.name %>
+            </td>
+            <td>
+                <%= event.description %>
+            </td>
+            <td>
+                <a href="/events/<%= event.slug %>" class="btn btn-sm btn-primary">
+                    View
+                </a>
+                <a href="/events/<%= event.slug %>/edit" class="btn btn-sm btn-primary">
+                    Edit
+                </a>
+                </a>
+                <a href="/events/<%= event.slug %>/delete" class="btn btn-sm btn-danger">
+                    Delete
+                </a>
+            </td>
+        </tr>
         <% } %>
     </tbody>
 </table>
